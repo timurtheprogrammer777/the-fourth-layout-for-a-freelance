@@ -13,6 +13,15 @@ $(function () {
   
     });
 
+    $('.review__inner').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+    });
+
+    
 //     $('.team__inner-content').slick({
 //       infinite: true,
 //       slidesToShow: 1,
