@@ -47,9 +47,9 @@ $(function () {
 //     });
 
 
-//     $('.burger-btn').on('click', function(){
-//       $('.header-ul').slideToggle(); 
-//   });
+    $('.burger-btn').on('click', function(){
+      $('.header__ul').slideToggle(); 
+  });
   
   
   

@@ -22,7 +22,9 @@ html{
 
 body{
     display: block;
+    font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif;
+    
     font-size: 16px;
     font-weight: 400;
 }
@@ -63,7 +65,24 @@ h2{
     padding: 0 10px;
 }
 
-
+.burger-btn{
+    width: 30px;
+    height: 50px;
+    opacity: 0;
+    transition: all .3s;
+    cursor: pointer;
+    margin-right: 50px;
+    margin-top: 25px;
+    .burger-line{
+        background-color: wheat;
+        width: 30px;
+        height: 2px;
+        margin: 5px 0;
+    }
+    &:hover{
+        transform: scale(1.1 ,1.1);
+    }
+}
 // main end
 
 //header start
@@ -86,6 +105,8 @@ h2{
         .nav{
             ul{
                 display: flex;
+                justify-content: flex-end;
+                margin-bottom: -42px;
                 li + li{
                     margin-left: 35px;
                 }
@@ -102,11 +123,13 @@ h2{
             }
         }
         .header__btn{
-            text-transform: uppercase;
+            
             button{
                 background-color: #e57373;
                 border: none;
-                padding: 15px 40px;
+                padding: 25px 60px;
+                text-transform: uppercase;
+                font-size: 14px;
                 cursor: pointer;
                 color: #fff;
                 border-radius: 5px;
@@ -155,28 +178,41 @@ h2{
     }
     .header__inner-title{
         margin-left: 100px;
-        margin-bottom: 150px;
+        margin-bottom: 10px;
         .header__inner-author{
             p{
                 color: #a19076;
                 margin-bottom: 35px;
                 font-size: 25px;
+                text-transform: uppercase;
             }
         }
         .header__inner-main-text{
             h1{
+                font-family: 'Oswald', sans-serif;
                 font-size: 60px;
                 font-weight: 700;
-                width: 50%;
+                width: 60%;
+                text-transform: uppercase;
+                line-height: 1.4;
             }
         }
     }
+    .header__inner-opacity-text{
+        font-size: 122px;
+        font-weight: 700;
+        -webkit-text-stroke: 1px rgba(255,255,255,0.1);
+        color: rgba(000, 000, 000, .1);
+    }
+
     .header__inner-down-btn{
         display: flex;
         justify-content: end;
+        opacity: 0.6;
+        // padding: 0 100px 0 0;
         button{
             padding: 35px 75px  30px 50px;
-            background-color: #af804d;
+            background-color: rgba(209,159,104,0.7);
             border: none;
             cursor: pointer;
             border-radius: 5px;
@@ -188,6 +224,7 @@ h2{
             }
         }
     }
+
 }
 
 //header end 
@@ -745,29 +782,141 @@ h2{
     }
 }
 
-.footer__inner {
-}
-.footer__inner-content-up {
-}
-.footer__inner-content-up-item {
-}
-.footer__logo {
-}
-.footer__inner-content-down {
-}
-.footer__copyright {
-}
-.footer__social-links {
-}
-.fa-brands {
-}
-.fa-twitter {
-}
-.fa-facebook-f {
-}
-.fa-instagram-square {
-}
-.fa-telegram {
+//footer end
+
+//media start
+
+@media(max-width:1040px){
+    .header{
+        .header__inner-menu{
+            display: flex;
+            justify-content: space-between;
+            .nav{
+                display: flex;
+                // justify-content: space-between;
+                // width: 100%;
+                
+                .header__ul{
+                    opacity: 1;
+                    display: none;
+                    .header__inner-links{
+                        // padding-right: 100px;
+                        // margin-right: 200px;
+                        // padding: 0 100px 5px 100px;
+                        // background-color: #fff;
+                        color: #fff;
+                        border-radius: 10px;
+                        &:hover{
+                            color: #af804d;
+                            &::before,
+                            &::after{
+                                opacity: 0;
+                                display: none;
+                            }
+                        }
+                        
+                    }
+                    
+                    li + li{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        .header__inner-opacity-text{
+            font-size: 80px;
+        }
+        .header__btn{
+            display: none;
+        }
+    }
+    .burger-btn{
+        opacity: 1;
+        display: block;
+    }
 }
 
-//footer end
+@media(max-width:870px){
+    .header{
+        .header__inner-title{
+            margin-left: 50px;
+            .header__inner-author{
+                p{
+                    font-size: 20px;
+                }
+            }
+            .header__inner-main-text{
+                h1{
+                    width: 100%;
+                    font-size: 40px;
+                }
+            }
+        }
+        .header__inner-opacity-text{
+            font-size: 50px;
+        }
+        
+    }
+}
+@media(max-width:650px){
+    .header{
+        .header__inner-menu{
+            margin-bottom: 40px;
+        }
+        .header__inner-down-btn{
+            button{
+                width: 100%;
+            }
+        }
+    }
+}
+@media(max-width:530px ){
+    .header{
+        .header__inner-menu{
+            .nav{
+                .header__ul{
+                    .header__inner-links{
+                        margin-right: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        .burger-btn{
+            margin-left: -12px;
+            margin-right: 0;
+        }
+        .header__inner-opacity-text{
+            font-size: 35px;
+        }
+        
+    }
+}
+
+@media(max-width:400px){
+    .header{
+        .header__inner-title{
+            margin-left: 30px;
+            .header__inner-author{
+                p{
+                    font-size: 15px;
+                }
+            }
+            .header__inner-main-text{
+                h1{
+                    width: 100%;
+                    font-size: 30px;
+                }
+            }
+        }
+        .header__inner-opacity-text{
+            font-size: 25px;
+        }
+        .header__inner-down-btn{
+            button{
+                font-size: 14px;
+            }
+        }
+    } 
+}
+//media end
