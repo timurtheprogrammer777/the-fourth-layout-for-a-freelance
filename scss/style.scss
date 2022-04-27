@@ -786,7 +786,21 @@ h2{
 //footer end
 
 //media start
-
+@media (max-width:1240px){
+    .price{
+        .price__inner{
+            .price__inner-content-right{
+                .price__inner-content-list{
+                    flex-direction: column;
+                    .price__right-col{
+                        margin-left: 0;
+                        margin-top: -17px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media(max-width:1040px){
     .header{
         .header__inner-menu{
@@ -871,6 +885,28 @@ h2{
             }
         }
     }
+    .price{
+        .price__inner{
+            &::before{
+                content: none;
+            }
+            .price__inner-content-right{
+                .price__inner-content-title{
+                    span{
+                        font-size: 15px;
+                    }
+                    h2{
+                        font-size: 30px;
+                    }
+                }
+            }
+            .price__inner-content-left{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media(max-width:870px){
@@ -919,6 +955,30 @@ h2{
                     //         width: 100%;
                     //     }
                     // }
+                }
+            }
+        }
+    }
+    .price{
+        .price__inner{
+            padding: 60px 0;
+            .price__inner-content{
+                flex-direction: column;
+                .price__inner-content-left{
+                    width: 50%;
+                    padding-bottom: 150px;
+                }
+                .price__inner-content-right{
+                    margin-left: 0;
+                    .price__inner-content-title{
+                        text-align: center;
+                    }
+                    .price__inner-content-list{
+                        text-align: start;
+                        .price__inner-content-item{
+                            margin: 20px 0;
+                        }
+                    }
                 }
             }
         }
@@ -982,6 +1042,23 @@ h2{
                 h2{
                     font-size: 20px;
                 }
+            }
+        }
+    }
+    .price{
+        .price__inner{
+            .price__inner-content-right{
+                .price__inner-content-title{
+                    span{
+                        font-size: 15px;
+                    }
+                    h2{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .price__inner-content-left{
+                padding-bottom: 100px;
             }
         }
     }
@@ -1050,6 +1127,16 @@ h2{
                             content: none;
                         }
                     }
+                }
+            }
+        }
+    }
+    .price{
+        .price__inner{
+            .price__inner-content{
+                .price__inner-content-left{
+                    width: 100%;
+                    padding-bottom: 50px;
                 }
             }
         }
