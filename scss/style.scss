@@ -844,6 +844,17 @@ h2{
             }
         }
     }
+    .service{
+        .service__title{
+            width: 100%;
+            span{
+                font-size: 15px;
+            }
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
 }
 
 @media(max-width:870px){
@@ -886,6 +897,37 @@ h2{
         .header__inner-down-btn{
             button{
                 width: 100%;
+            }
+        }
+    }
+    .exp{
+        .exp__inner-right-content{
+            h2{
+                font-size: 20px;
+            }
+            span{
+                font-size: 15px;
+            }
+        }
+    }
+    .service{
+        .service__title{
+            h2{
+                font-size: 20px;
+            }
+            span{
+                font-size: 15px;
+            }
+        }
+        .service__inner-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto;
+            .service__inner-content-item{
+                width: 100%;
+                margin: 10px 0;
             }
         }
     }
