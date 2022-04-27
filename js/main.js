@@ -9,6 +9,32 @@ $(function () {
       dots: true,
     //   autoplay: true,
     //   autoplaySpeed: 1500,
+    responsive: [
+      {
+        breakpoint: 1180,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 870,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      // {
+      //   breakpoint: 940,
+      //   settings: {
+      //     slidesToShow: 2,
+      //   }
+      // },
+      // {
+      //   breakpoint: 680,
+      //   settings: {
+      //     slidesToShow: 1,
+      //   }
+      // },
+    ]
       
   
     });
