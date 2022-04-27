@@ -907,6 +907,20 @@ h2{
             }
         }
     }
+    .gallery{
+        .gallery__inner{
+            .gallery__inner-title{
+                width: 100%;
+                margin: 0 auto;
+                span{
+                    font-size: 15px;
+                }
+                h2{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
 }
 
 @media(max-width:870px){
@@ -1062,6 +1076,25 @@ h2{
             }
         }
     }
+    .gallery{
+        .gallery__inner{
+            .gallery__inner-title{
+                span{
+                    font-size: 15px;
+                }
+                h2{
+                    font-size: 20px;
+                }
+            }
+            .gallery__inner-content{
+                .gallery__inner-content-item{
+                    img{
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+    }
 }
 @media(max-width:530px ){
     .header{
@@ -1140,6 +1173,9 @@ h2{
                 }
             }
         }
+    }
+    .gallery{
+        padding: 50px 0;
     }
 }
 
