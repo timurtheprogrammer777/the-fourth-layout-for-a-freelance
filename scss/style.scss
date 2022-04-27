@@ -834,6 +834,16 @@ h2{
         opacity: 1;
         display: block;
     }
+    .exp{
+        .exp__inner-right-content{
+            span{
+                font-size: 15px;
+            }
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
 }
 
 @media(max-width:870px){
@@ -856,6 +866,16 @@ h2{
             font-size: 50px;
         }
         
+    }
+    .exp{
+        .exp__inner{
+            flex-direction: column;
+            text-align: center;
+            .exp__inner-right-content{
+                margin-top: 20px;
+                margin-left: 0;
+            }
+        }
     }
 }
 @media(max-width:650px){
@@ -890,6 +910,21 @@ h2{
             font-size: 35px;
         }
         
+    }
+    .exp{
+        .exp__inner{
+            .exp__inner-left-content{
+                img{
+                    width: 100%;
+                }
+            }
+            .exp__inner-right-content{
+                p{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
     }
 }
 
