@@ -45,6 +45,14 @@ $(function () {
       slidesToScroll: 1,
       arrows: false,
       dots: true,
+      responsive: [
+        {
+          breakpoint: 871,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+      ]
     });
 
     

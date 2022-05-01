@@ -569,6 +569,7 @@ h2{
             p{
                 padding-bottom: 25px;
                 border-bottom: 1px solid #fff;
+                height: 100px;
             }
             a{
                 color: #e57373;
@@ -800,6 +801,7 @@ h2{
             }
         }
     }
+    
 }
 @media(max-width:1040px){
     .header{
@@ -921,6 +923,17 @@ h2{
             }
         }
     }
+    .review{
+        .review__inner{
+            .review__inner-item{
+                height: 200px;
+                width: 100%;
+                p{
+                    height: 150px;
+                }
+            }
+        }
+    }
 }
 
 @media(max-width:870px){
@@ -993,6 +1006,15 @@ h2{
                             margin: 20px 0;
                         }
                     }
+                }
+            }
+        }
+    }
+    .review{
+        .review__inner{
+            .review__inner-item{
+                p{
+                    height: 100px;
                 }
             }
         }
@@ -1095,6 +1117,18 @@ h2{
             }
         }
     }
+    .review{
+        padding: 50px 60px;
+        .review__inner{
+            .review__inner-item{
+                padding: 0;
+                p{
+                    font-size: 14px;
+                   
+                }
+            }
+        }
+    }
 }
 @media(max-width:530px ){
     .header{
@@ -1177,6 +1211,15 @@ h2{
     .gallery{
         padding: 50px 0;
     }
+    .review{
+        .review__inner{
+            .review__inner-item{
+                p{
+                    height: 120px;
+                }
+            }
+        }
+    }
 }
 
 @media(max-width:400px){
@@ -1204,5 +1247,25 @@ h2{
             }
         }
     } 
+    .review{
+        .review__inner{
+            .review__inner-item{
+                p{
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:350px){
+    .review{
+        .review__inner{
+            .review__inner-item{
+                p{
+                    height: 205px;
+                }
+            }
+        }
+    }
 }
 //media end
