@@ -234,16 +234,19 @@ h2{
 .exp {
     margin-bottom: 110px;
     &__inner{
+        
         position: relative;
         &::before{
             content: '';
             background-image: url(../img/about-shape.png);
             background-repeat: no-repeat;
+            background-size: contain;
             width: 60%;
             height: 100%;
             position: absolute;
-            top: 50%;
-            left: 69%;
+            top: 29%;
+            left: 40%;
+            z-index: -1;
         }
         display: flex;
         justify-content: space-between;
@@ -484,7 +487,7 @@ h2{
                     }
                     
                     .price__inner-content-item{
-                        width: 110%;
+                        width: 100%;
                         margin-bottom: 15px;
                         font-size: 15px;
                         span{
@@ -766,6 +769,7 @@ h2{
         &-content-down{
             padding-top: 20px;
             display: flex;
+            align-items: center;
             justify-content: space-between;
             .footer__social-links{
                 a + a{
@@ -800,6 +804,15 @@ h2{
                         margin-left: 0;
                         margin-top: -17px;
                     }
+                }
+            }
+        }
+    }
+    .blog{
+        .blog__inner{
+            .blog__inner-content{
+                .blog__inner-content-item + .blog__inner-content-item{
+                    margin-left: 10px;
                 }
             }
         }
@@ -949,11 +962,28 @@ h2{
             }
             .blog__inner-content{
                 .blog__inner-content-item{
-                    span{
-
-                    }
                     a{
                         font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        .footer__inner{
+            .footer__inner-content-up{
+                flex-wrap: wrap;
+                // width: 50%;
+                .footer__inner-content-up-item{
+                    flex-basis: 40%;
+                    margin-left: 50px;
+                    
+                }
+                .footer__right-item{
+                    form{
+                        button{
+                            padding: 10px 80px ;
+                        }
                     }
                 }
             }
@@ -1040,6 +1070,51 @@ h2{
             .review__inner-item{
                 p{
                     height: 100px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:720px){
+    .footer{
+        .footer__inner{
+            .footer__inner-content-up{
+                .footer__inner-content-up-item{
+                    margin-left: 0;
+                    flex-basis: 100%;
+                    .footer__logo{
+                        margin-bottom: 20px;
+                        span{
+                            position: relative;
+
+                        }
+                        img{
+                            position: absolute;
+                            left: 65%;
+                        }
+                    }
+                    h3{
+                        font-size: 25px;
+                        margin: 10px auto;
+                    }
+                    a{
+                        font-size: 25px;
+                        margin: 7px auto;
+                        width: auto;
+                    }
+                    p{
+                        margin: 10px auto;
+                        text-align: center;
+                    }
+                    form{
+                        margin: 0 auto;
+                    }
+                    span{
+                        margin: 0 auto;
+                    }
+                    // img{
+                    //     margin: 0 auto;
+                    // }
                 }
             }
         }
@@ -1173,6 +1248,19 @@ h2{
                 .blog__inner-content-item{
                     margin-top: 10px;
                 }
+                .blog__inner-content-item + .blog__inner-content-item{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .footer{
+        .footer__inner{
+            .footer__inner-content-down{
+                flex-direction: column;
+                .footer__copyright{
+                    text-align: center;
+                }
             }
         }
     }
@@ -1279,6 +1367,27 @@ h2{
             }
         }
     }
+    .footer{
+        .footer__inner{
+            .footer__inner-content-up{
+                .footer__inner-content-up-item{
+                    .footer__logo{
+                        img{
+                            left: 69%;
+                        }
+                    }
+                    form{
+                        input{
+                            width: 100%;
+                        }
+                        button{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(max-width:400px){
@@ -1325,6 +1434,20 @@ h2{
             .review__inner-item{
                 p{
                     height: 205px;
+                }
+            }
+        }
+    }
+    .blog{
+        .blog__inner{
+            .blog__inner-content{
+                .blog__inner-content-item{
+                    span{
+                        margin-left: 25px;
+                    }
+                    a{
+                        margin-left: 15px;
+                    }
                 }
             }
         }
