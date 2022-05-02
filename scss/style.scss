@@ -617,7 +617,7 @@ h2{
 //blog start
 
 .blog{
-    padding: 120px;
+    padding: 120px 0;
     &__inner{
         &-title{
             width: 56%;
@@ -659,6 +659,9 @@ h2{
                     &:hover{
                         color: #d19f68;
                     }
+                }
+                img{
+                    width: 100%;
                 }
             }
         }
@@ -934,6 +937,28 @@ h2{
             }
         }
     }
+    .blog{
+        .blog__inner{
+            .blog__inner-title{
+                span{
+                    font-size: 15px;
+                }
+                h2{
+                    font-size: 30px;
+                }
+            }
+            .blog__inner-content{
+                .blog__inner-content-item{
+                    span{
+
+                    }
+                    a{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(max-width:870px){
@@ -1129,6 +1154,28 @@ h2{
             }
         }
     }
+    .blog{
+        padding: 20px 70px ;
+        .blog__inner{
+            .blog__inner-title{
+                margin-bottom: 0;
+                span{
+                    font-size: 15px;
+                }
+                h2{
+                    font-size: 20px;
+                }
+            }
+        }
+        .blog__inner{
+            .blog__inner-content{
+                flex-direction: column;
+                .blog__inner-content-item{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
 }
 @media(max-width:530px ){
     .header{
@@ -1220,6 +1267,18 @@ h2{
             }
         }
     }
+    .blog{
+        padding: 20px 30px;
+        .blog__inner{
+            .blog__inner-content{
+                .blog__inner-content-item{
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(max-width:400px){
@@ -1255,6 +1314,9 @@ h2{
                 }
             }
         }
+    }
+    .blog{
+        padding: 15px 5px 10px 5px;
     }
 }
 @media(max-width:350px){
